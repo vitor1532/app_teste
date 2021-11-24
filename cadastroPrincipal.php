@@ -30,17 +30,17 @@
               				Cadastro
             			</div>
             			<div class="card-body">
-							<form method="POST" action="cadastro.php">
+							<form method="POST" action="cadastro.php" class="form" id="form_criar" >
 
 								<div class="form-group">
-									<input class="form-control" type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de usuário"><br>
+									<input class="form-control" type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de usuário" required minlength="5"><br>
 								</div>
 
 								<div class="form-group">
-									<input class="form-control" type="text" name="login" id="login" placeholder="E-mail"><br>
+									<input class="form-control" type="email" name="login" id="login" placeholder="E-mail" required><br>
 								</div>
 								 <div class="form-group">
-									<input class="form-control" type="password" name="senha" id="senha" placeholder="Senha"><br>
+									<input class="form-control" type="password" name="senha" id="senha" placeholder="Senha" required><br>
 								</div>
 
 								<? if(isset($_GET['cadastro']) && $_GET['cadastro'] == 'erro2') {?>
@@ -62,5 +62,14 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="jquery-2.1.4.min.js"></script>
+       <script src="jquery.validate.min.js"></script>
+       <script>
+             $(function(){
+                    $("#form_criar").validate();
+             });
+       </script>
+
 	</body>
 </html>
