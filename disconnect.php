@@ -4,6 +4,6 @@
 
 	session_destroy();
 
-	header('Location: http://localhost/app_teste/index.php');
+	header('index.php');
 
 ?>

@@ -5,8 +5,8 @@
 	//iniciar o recurso de sessão
 	session_start();
 
-	$nomeUsuario = $_POST['user'];
-	$email = $_POST['email'];
+	$nomeUsuario = $_POST['usuario'];
+	$email = $_POST['usuario'];
 	$senha = $_POST['senha'];
 
 	print_r($_POST);
