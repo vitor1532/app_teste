@@ -42,12 +42,6 @@
                   <input name="usuario" class="form-control" placeholder="Insira seu e-mail ou nome de usuário">
                 </div>
 
-                <!--<div class="form-group">ou</div>
-
-                <div class="form-group">
-                  <input name="user" type="user" class="form-control" placeholder="Nome de Usuário">
-                </div>-->
-
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
