@@ -13,6 +13,33 @@
         width: 100%;
         margin: 0 auto;
       }
+
+      .text {
+        height: 22px;
+        margin-top: 30px;
+      
+      }
+
+      #wrapper .text {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: small;
+        background-color: #FFFFCC;
+        background-position: center;
+        background-size: auto;
+        /*padding: 17px;
+        margin: 5px;*/
+        border-radius: 25%;
+        text-align: center;
+        visibility: hidden;
+      }
+
+      #wrapper:hover .text{
+        visibility: visible;
+        
+      }
+
     </style>
   </head>
 
@@ -42,12 +69,18 @@
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-6 d-flex justify-content-center">
-                  <a href="abrir_chamado.php"><img src="formulario_abrir_chamado.png" width="70" height="70"></a>
+                <div id="wrapper" class="col-6 d-flex justify-content-center">
+                  <a href="abrir_chamado.php"><img src="formulario_abrir_chamado.png" class="hover" width="70" height="70">
+                  </a>
+                  <br>
+                  <span class="text">Abrir chamados</span>
                   
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" width="70" height="70"></a>
+                <div id="wrapper" class="col-6 d-flex justify-content-center">
+                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" class="hover" width="70" height="70">
+                  </a>
+                  <br>
+                  <span class="text">Consultar chamados </span>
                   
                 </div>
               </div>
