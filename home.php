@@ -53,9 +53,14 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a href="config_perfil.php" class="nav-link">mudar</a>
+        </li>
+      </ul> 
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <a href="disconnect.php" class="nav-link">Sair</a>
         </li>
-      </ul>  
+      </ul> 
       
     </nav>
 

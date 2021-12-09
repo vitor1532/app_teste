@@ -14,7 +14,7 @@
 	$senha = mysqli_real_escape_string($connect, $_POST['senha']);
 	$db = mysqli_select_db($connect, 'app_teste_usuario');
 	$SQL = "
-		SELECT id, email, senha, perfil_id
+		SELECT *
 		FROM usuarios
 		WHERE email = '$email'
 		AND  senha = '$senha'
@@ -42,6 +42,7 @@
 		$_SESSION['autenticado'] = 'SIM';
 		$_SESSION['id'] = $usuario_id;
 		$_SESSION['perfil_id'] =$usuario_perfil_id;
+		$_SESSION['nomeUsuario'] = $nomeUsuario;
 		header('Location: home.php');
 
 	}else {
