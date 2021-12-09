@@ -17,9 +17,23 @@
 	<body>
 
 		<nav class="navbar navbar-dark bg-dark">
-      		<a class="navbar-brand" href="index.php">
-        		<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">App Help Desk</a>
-    	</nav>
+			<a class="navbar-brand" href="home.php">
+		      	<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		        	App Help Desk
+		      	</a>
+
+		      <ul class="navbar-nav ml-auto">
+		        <li class="nav-item">
+		          <a href="config_perfil.php" class="nav-link"><img src="config.png" width="30" height="30" class="d-inline-block align-top"></a>
+		        </li>
+		      </ul> 
+		      <ul class="navbar-nav ml-4">
+		        <li class="nav-item">
+		          <a href="disconnect.php" class="nav-link">Sair</a>
+		        </li>
+		     </ul> 
+		      
+		</nav>
 
     	<div class="container">    
       		<div class="row">
