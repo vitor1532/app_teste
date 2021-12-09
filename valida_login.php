@@ -5,23 +5,7 @@
 	//iniciar o recurso de sessão
 	session_start();
 
-	//$nomeUsuario = $_POST['usuario'];
-	//$email = $_POST['usuario'];
-	//$senha = $_POST['senha'];
-
 	print_r($_POST);
-
-	//PDO
-	/*$pdo = new PDO(
-		'mysql:host=localhost;dbname=app_teste_usuario',
-		'root',
-		'',
-		array(
-			PDO::MYSQL_ATTR_SSL_KEY    =>'/path/to/client-key.pem',
-        	PDO::MYSQL_ATTR_SSL_CERT=>'/path/to/client-cert.pem',
-        	PDO::MYSQL_ATTR_SSL_CA    =>'/path/to/ca-cert.pem'
-		)
-	);*/
 
 	//SQL
 	$connect = mysqli_connect("localhost", "root");
