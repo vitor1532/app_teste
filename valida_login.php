@@ -11,7 +11,7 @@
 	$connect = mysqli_connect("localhost", "root");
 	$nomeUsuario = mysqli_real_escape_string($connect, $_POST['usuario']);
 	$email = mysqli_real_escape_string($connect, $_POST['usuario']);
-	$senha = mysqli_real_escape_string($connect, $_POST['senha']);
+	$senha = md5(mysqli_real_escape_string($connect, $_POST['senha']));
 	$db = mysqli_select_db($connect, 'app_teste_usuario');
 	$SQL = "
 		SELECT id, email, senha, perfil_id
