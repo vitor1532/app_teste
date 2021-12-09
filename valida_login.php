@@ -5,14 +5,29 @@
 	//iniciar o recurso de sessão
 	session_start();
 
-	$nomeUsuario = $_POST['usuario'];
-	$email = $_POST['usuario'];
-	$senha = $_POST['senha'];
+	//$nomeUsuario = $_POST['usuario'];
+	//$email = $_POST['usuario'];
+	//$senha = $_POST['senha'];
 
 	print_r($_POST);
 
+	//PDO
+	/*$pdo = new PDO(
+		'mysql:host=localhost;dbname=app_teste_usuario',
+		'root',
+		'',
+		array(
+			PDO::MYSQL_ATTR_SSL_KEY    =>'/path/to/client-key.pem',
+        	PDO::MYSQL_ATTR_SSL_CERT=>'/path/to/client-cert.pem',
+        	PDO::MYSQL_ATTR_SSL_CA    =>'/path/to/ca-cert.pem'
+		)
+	);*/
+
 	//SQL
 	$connect = mysqli_connect("localhost", "root");
+	$nomeUsuario = mysqli_real_escape_string($connect, $_POST['usuario']);
+	$email = mysqli_real_escape_string($connect, $_POST['usuario']);
+	$senha = mysqli_real_escape_string($connect, $_POST['senha']);
 	$db = mysqli_select_db($connect, 'app_teste_usuario');
 	$SQL = "
 		SELECT id, email, senha, perfil_id
@@ -22,6 +37,7 @@
 		OR nomeUsuario = '$nomeUsuario'
 		AND senha = '$senha'
 	";
+	//sql injection for tests: ' or ''='
 	$result = @mysqli_query($connect, $SQL) or die("erro no result");
 	$total = @mysqli_num_rows($result);
 	$row = mysqli_fetch_row($result);
