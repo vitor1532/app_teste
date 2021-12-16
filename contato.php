@@ -1,11 +1,8 @@
-<?require_once "validador_acesso.php"?>
-
 <html>
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
 
-    <!--Boostrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/6eef05c72f.js" crossorigin="anonymous"></script>
@@ -44,12 +41,13 @@
       }
 
     </style>
+
   </head>
 
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
@@ -64,41 +62,49 @@
           <a href="disconnect.php" class="nav-link">Sair</a>
         </li>
       </ul> 
-      
     </nav>
 
-    <div class="container">    
+    <div class="container">
       <div class="row">
-
         <div class="card-home">
           <div class="card">
-            <div class="card-header">
-              Menu
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div id="wrapper" class="col-6 d-flex justify-content-center">
-                  <a href="abrir_chamado.php"><img src="formulario_abrir_chamado.png" class="hover" width="70" height="70">
-                  </a>
-                  <br>
-                  <span class="text">Abrir chamados</span>
-                  
-                </div>
-                <div id="wrapper" class="col-6 d-flex justify-content-center">
-                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" class="hover" width="70" height="70">
-                  </a>
-                  <br>
-                  <span class="text">Consultar chamados </span>
-                  
+            <div id="wrapper" class="col-md-12 d-flex justify-content-center">
+                
+              <div class="card-body font-weight-bold">
+                <form action="processa_envio.php" method="post">
+                    <!--<div class="form-group">
+                      <label for="para">Para</label>
+                      <input name="para" type="text" class="form-control" id="para" placeholder="joao@dominio.com.br">
+                    </div>-->
+
+                  <div class="form-group ">
+                    <label for="assunto">Assunto</label>
+                    <input name="assunto" type="text" class="form-control" id="assunto" placeholder="Assunto do e-mail">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" class="form-control" id="mensagem"></textarea>
+                  </div>
+
+                    <?if (isset($_GET['msg']) && $_GET['msg'] == 'erro') {?>
+
+                      <div class="text-danger">Ops, parece que voce deixou de preencher um campo! Por favor, preencha todos antes de enviar o e-mail.</div>
+
+                    <?}?>
+
+                    <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-  </div>
+      </div>
+      
 
-  <footer class="fixed-bottom text-center text-white bg-dark">
+    
+    <footer class="fixed-bottom text-center text-white bg-dark">
     
     <!--grid container-->
     <div class="container pt-1">
