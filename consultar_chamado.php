@@ -36,6 +36,8 @@
     <title>App Help Desk</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/6eef05c72f.js" crossorigin="anonymous"></script>
 
     <style>
       .card-consultar-chamado {
@@ -111,6 +113,39 @@
           </div>
         </div>
       </div>
+    <footer class="text-center text-white bg-dark">
     
+    <!--grid container-->
+    <div class="container pt-1">
+      <!--social media-->
+      <section class="mb-1">
+        <!--Facebook-->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="btn btn-link btn-floating btn-lg text-light p-1 ml-2" 
+        role="button"
+        ><i class="fab fa-facebook"></i></a>
+
+        <!--Twitter-->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="btn btn-link btn-floating btn-lg text-light p-1 ml-2"
+        role="button"
+        ><i class="fab fa-twitter"></i></a>
+
+        <!--instagram-->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="btn btn-link btn-floating btn-lg text-light p-1 ml-2"
+        role="button"
+        ><i class="fab fa-instagram"></i></a>
+      </section>
+        
+    </div>
+
+    <div class="text-center text-light bg-dark p-1">
+      @footer
+      <a href="contato.php" text-light>Fale Conosco</a>
+      
+    </div>
+
+  </footer>
   </body>
 </html>
