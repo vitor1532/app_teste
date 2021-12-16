@@ -1,4 +1,11 @@
 <?require_once "validador_acesso.php"?>
+<?php
+  
+  /*echo '<pre>';
+  print_r($_SESSION);
+  echo '</pre>';
+  */
+?>
 
 <html>
   <head>

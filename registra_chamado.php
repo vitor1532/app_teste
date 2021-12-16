@@ -12,13 +12,13 @@
 	print_r($_SESSION);
 	echo '</pre>';
 
-	$texto = $_SESSION['id'] . '#' . implode('#', str_replace('#', '-', $_POST)) . PHP_EOL;
+	$texto = $_SESSION['nomeUsuario'] . '#' . implode('#', str_replace('#', '-', $_POST)) . PHP_EOL;
 
 	$arquivo = fopen('arquivo.txt', 'a');
 
 	fwrite($arquivo, $texto);
 	fclose($arquivo);
 
-	header('Location: abrir_chamado.php');
+	header('Location: home.php');
 
 ?>
