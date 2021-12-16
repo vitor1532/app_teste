@@ -29,7 +29,7 @@
 	//variavel que verifica se a autenticação foi realizada
 	$usuario_autenticado = false;
 	//variavel de id do usuario
-	$usuario_id = $row[4];
+	$usuario_id = $row[0];
 	$usuario_perfil_id = $row[3];
 	//array dos perfis
 	$perfis = [1 => 'Administrativo', 2 => 'Usuário'];
