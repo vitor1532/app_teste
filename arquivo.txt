@@ -1,17 +1,8 @@
-1#teste vitor#Impressora#teste
-2#teste adm#Criação Usuário#teste adm
-3#teste jose#Hardware#jhdijdna
-2#titulo#Software#sadsadfsad
-1#titulo#Impressora#,,
-#titulo VITOR#Criação Usuário#teste VITOR
-4#titulo raul#Criação Usuário#descrição raul
-6#titulo maisum#Criação Usuário#maisum
-1#
-1#
-92#alteste#Criação Usuário#teste
-1##Criação Usuário#
-1##Criação Usuário#
-1#safdfssafsfafsa#Criação Usuário#asffsa
-admin#tutyk#Criação Usuário#liçdghliçd
 
-admin#dggagasf#Criação Usuário#asfasfgasgfs
+2#vitor#teste vitor#Criação Usuário#dsfa
+2#vitor#agtfgeaaw#Criação Usuário#gwwagawg
+1#admin#fwaaaaa#Criação Usuário#afwwwwww
+8#toastyy#asfafsa#Criação Usuário#sfafsasf
+8#toastyy#afsasfaf#Criação Usuário#afasfaf
+8#toastyy#g\deghh#Criação Usuário#ehsh\eg
+8#toastyy#sgesdgdg#Criação Usuário#sdfgdsfdgsdg

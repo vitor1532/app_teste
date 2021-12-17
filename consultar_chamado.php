@@ -93,9 +93,9 @@
 
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title"><?= $chamado[0] . ' - ' . $chamado[1] ?></h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><?= $chamado[2] ?></h6>
-                  <p class="card-text"><?= $chamado[3] ?></p>
+                  <h5 class="card-title"><?= $chamado[1] . ' - ' . $chamado[2] ?></h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><?= $chamado[3] ?></h6>
+                  <p class="card-text"><?= $chamado[4] ?></p>
 
                 </div>
               </div>
@@ -104,7 +104,7 @@
 
               </div>
 
-              <div class="row ml-2 mt-3 mb-5">
+              <div class="row ml-2 mt-3 mb-5 pb-5">
                 <div class="col-6">
                   <a href="home.php" class="btn btn-lg btn-warning btn-block" type="submit">Voltar</a>
                 </div>
@@ -113,7 +113,7 @@
           </div>
         </div>
       </div>
-    <footer class="text-center text-white bg-dark">
+    <footer class="fixed-bottom text-center text-white bg-dark">
     
     <!--grid container-->
     <div class="container pt-1">
