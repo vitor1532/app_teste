@@ -1,5 +1,4 @@
 <?require_once "validador_acesso.php"?>
-<?= $_SESSION['nomeUsuario'] ?>
 <html>
 	<head>
 		<meta charset="utf-8" />
