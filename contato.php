@@ -7,38 +7,7 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/6eef05c72f.js" crossorigin="anonymous"></script>
 
-    <style>
-      .card-home {
-        padding: 30px 0 0 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      .text {
-        height: 22px;
-        margin-top: 30px;
-      
-      }
-
-      #wrapper .text {
-        position: relative;
-        top: auto;
-        left: auto;
-        font-size: small;
-        background-color: #FFFFCC;
-        background-position: center;
-        background-size: auto;
-        border-radius: 25%;
-        text-align: center;
-        visibility: hidden;
-      }
-
-      #wrapper:hover .text{
-        visibility: visible;
-        
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
   </head>
 

@@ -34,13 +34,8 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/6eef05c72f.js" crossorigin="anonymous"></script>
 
-    <style>
-      .card-consultar-chamado {
-        padding: 30px 0 0 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
   </head>
 
   <body>
