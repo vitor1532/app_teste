@@ -10,6 +10,15 @@
     <script src="https://kit.fontawesome.com/6eef05c72f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--
+    <style>
+      .card-abrir-chamado {
+        padding: 30px 0 0 0;
+        width: 100%;
+        margin: 0 auto;
+      }
+    </style>-->
+    
   </head>
 
   <body>
