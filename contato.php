@@ -28,8 +28,6 @@
         background-color: #FFFFCC;
         background-position: center;
         background-size: auto;
-        /*padding: 17px;
-        margin: 5px;*/
         border-radius: 25%;
         text-align: center;
         visibility: hidden;
@@ -72,10 +70,6 @@
                 
               <div class="card-body font-weight-bold">
                 <form action="processa_envio.php" method="post">
-                    <!--<div class="form-group">
-                      <label for="para">Para</label>
-                      <input name="para" type="text" class="form-control" id="para" placeholder="joao@dominio.com.br">
-                    </div>-->
 
                   <div class="form-group ">
                     <label for="assunto">Assunto</label>

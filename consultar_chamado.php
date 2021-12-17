@@ -1,11 +1,6 @@
 <?require_once "validador_acesso.php"?>
 
 <?php
-  /*
-  echo '<pre>';
-  print_r($_SESSION);
-  echo '</pre>';
-  */
 
   $chamados = [];
   $arquivo = fopen('arquivo.txt', 'r');

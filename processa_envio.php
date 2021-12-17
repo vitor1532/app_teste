@@ -42,11 +42,7 @@
 	$mensagem->__set('para', 'alcachofrafrederico@gmail.com');
 	$mensagem->__set('assunto', $_POST['assunto']);
 	$mensagem->__set('mensagem', $_POST['mensagem']);
-/*
-	echo '<pre>';
-	print_r($mensagem);
-	echo '</pre>';
-*/
+
 	if(!$mensagem->mensagemValida()) {
 
 		echo 'Mensagem é inválida';
@@ -71,13 +67,6 @@
 	    //Recipients
 	    $mail->setFrom('alcachofrafrederico@gmail.com', 'alcachofra remetente');
 	    $mail->addAddress($mensagem->__get('para'));     //Add a recipient
-	    //$mail->addReplyTo('alcachofrafrederico@gmail.com', 'Information');
-	    //$mail->addCC('cc@example.com');
-	    //$mail->addBCC('bcc@example.com');
-
-	    //Attachments
-	   // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-	   // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
 	    //Content
 	    $mail->isHTML(true);                                  //Set email format to HTML
@@ -129,8 +118,6 @@
         background-color: #FFFFCC;
         background-position: center;
         background-size: auto;
-        /*padding: 17px;
-        margin: 5px;*/
         border-radius: 25%;
         text-align: center;
         visibility: hidden;

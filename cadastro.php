@@ -27,19 +27,5 @@
 	}
 
 	mysqli_close($connect);
-	
 
-
-
-	/*
-	if($connect) {
-		echo 'connect deu bom';
-	}else {
-		echo 'connect deu ruim';
-	}
-	
-	echo '<pre>';
-	print_r($_POST);
-	echo '</pre>';
-	*/
 ?>
