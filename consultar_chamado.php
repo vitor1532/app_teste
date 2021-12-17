@@ -69,7 +69,7 @@
       
     </nav>
 
-    <div class="container">    
+    <div class="container mb-5">    
       <div class="row">
 
         <div class="card-consultar-chamado">
@@ -104,7 +104,7 @@
 
               </div>
 
-              <div class="row ml-2 mt-3 mb-5 pb-5">
+              <div class="row ml-2 mt-3 mb-5">
                 <div class="col-6">
                   <a href="home.php" class="btn btn-lg btn-warning btn-block" type="submit">Voltar</a>
                 </div>
