@@ -53,7 +53,7 @@
                   
                 </div>
                 <div id="wrapper" class="col-6 d-flex justify-content-center">
-                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" class="hover" width="70" height="70">
+                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" class="hover" width="70" height="70" >
                   </a>
                   <br>
                   <span class="text">Consultar chamados </span>
